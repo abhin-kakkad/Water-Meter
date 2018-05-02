@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.application.watermeter.admin_login">
+
+    <EditText
+        android:id="@+id/admin_login_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_user_data"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:hint="Enter your username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/admin_login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/user_login_submit"
+        android:layout_alignLeft="@+id/admin_login_username"
+        android:layout_alignStart="@+id/admin_login_username"
+        android:layout_marginBottom="97dp"
+        android:ems="10"
+        android:hint="Entre your password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/add_user_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:onClick="choosen_admin_signup"
+        android:text="SignUp" />
+
+    <Button
+        android:id="@+id/user_login_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/add_user_data"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/add_user_data"
+        android:layout_marginBottom="37dp"
+        android:text="Submit" />
+</RelativeLayout>

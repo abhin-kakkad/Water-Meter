@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.application.watermeter.add_user_data">
+
+    <EditText
+        android:id="@+id/add_user_data_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_user_data_reading"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/add_user_data_reading"
+        android:layout_marginTop="84dp"
+        android:ems="10"
+        android:hint="Enter username"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/add_user_data_reading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_user_data_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Enter water meter reading"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/add_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="69dp"
+        android:text="Add" />
+
+    <Spinner
+        android:id="@+id/add_user_data_date"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/add_user_data_reading"
+        android:layout_alignRight="@+id/add_user_data_reading"
+        android:layout_below="@+id/add_user_data_reading"
+        android:layout_marginTop="36dp" />
+
+    <Spinner
+        android:id="@+id/add_user_data_month"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_user_data_date"
+        android:layout_alignStart="@+id/add_user_data_date"
+        android:layout_below="@+id/add_user_data_date" />
+
+    <Spinner
+        android:id="@+id/add_user_data_year"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/add_user_data_month"
+        android:layout_alignStart="@+id/add_user_data_month"
+        android:layout_below="@+id/add_user_data_month" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_user_data_month"
+        android:layout_alignLeft="@+id/add_user_data_reading"
+        android:layout_alignStart="@+id/add_user_data_reading"
+        android:text="Select date" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/add_user_data_year"
+        android:layout_alignLeft="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:text="Select month" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/add_user_data_year"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5"
+        android:text="Select year" />
+
+</RelativeLayout>

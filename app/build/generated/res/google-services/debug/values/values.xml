@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">956093714960-l1jamutejq7mcdhqdk60ann4lfdjr77b.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://water-meter-b30a7.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">956093714960</string>
+    <string name="google_api_key" translatable="false">AIzaSyDb8qxonHMIwVUA2BmBqyLn_sJdQUOurYw</string>
+    <string name="google_app_id" translatable="false">1:956093714960:android:e63fd83d83b4f27c</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyDb8qxonHMIwVUA2BmBqyLn_sJdQUOurYw</string>
+    <string name="google_storage_bucket" translatable="false">water-meter-b30a7.appspot.com</string>
+    <string name="project_id" translatable="false">water-meter-b30a7</string>
+</resources>
