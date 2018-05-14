@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Abhin\\AndroidStudioProjects\\WaterMeter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-gl\\values-gl.xml",
+            "outputFile": "/Users/nish_1612/Documents/GitHub/Water-Meter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-gl/values-gl.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Abhin\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.0.4.aar\\ac2840f43283e0b756bc3644eac0a2ea\\res\\values-gl\\values.xml",
+                    "source": "/Users/nish_1612/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/5aad36f69f2dcb15979d4767952a14b7/res/values-gl/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Abhin\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.0.4.aar\\a3a8c35720f8fcf600aa9991a4d89722\\res\\values-gl\\values.xml",
+                    "source": "/Users/nish_1612/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/f863e33756c50e59bbb0eeaef05ef43e/res/values-gl/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Abhin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\40a10fbc531a702c4e41b09fb1c99200\\res\\values-gl\\values-gl.xml",
+                    "source": "/Users/nish_1612/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8b056b6ef62e41f514141b8568411799/res/values-gl/values-gl.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

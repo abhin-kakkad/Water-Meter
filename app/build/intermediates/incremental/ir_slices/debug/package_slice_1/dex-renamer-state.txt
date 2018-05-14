@@ -1,4 +1,4 @@
-#Tue Apr 10 12:27:39 IST 2018
-base.0=C\:\\Users\\Abhin\\AndroidStudioProjects\\WaterMeter\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\1
+#Mon May 14 14:34:00 IST 2018
+base.0=/Users/nish_1612/Documents/GitHub/Water-Meter/app/build/intermediates/transforms/dexMerger/debug/2
 path.0=classes.dex
 renamed.0=classes.dex

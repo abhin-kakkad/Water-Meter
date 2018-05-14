@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -35,7 +36,10 @@ public class admin_signup extends AppCompatActivity {
     private EditText admin_signup_society;
     private EditText admin_signup_password_2;
 
+    private TextView usernames;
+
     private DatabaseReference mDatabase;
+    private DatabaseReference myDatabase;
 
 
     @Override
@@ -48,7 +52,40 @@ public class admin_signup extends AppCompatActivity {
         admin_signup_society = (EditText)findViewById(R.id.admin_signup_society);
         admin_signup_password_2 = (EditText)findViewById(R.id.admin_signup_password_2);
 
+        usernames = (TextView)findViewById(R.id.username);
+
         mDatabase = FirebaseDatabase.getInstance().getReference();
+        myDatabase = FirebaseDatabase.getInstance().getReference();
+
+        Query q = myDatabase
+                .child("Admin")
+                .orderByChild("username");
+
+        final String[] username = new String[1];
+
+        q.addListenerForSingleValueEvent(new ValueEventListener(){
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                long size = dataSnapshot.getChildrenCount();
+                String t = "";
+                t = t + String.valueOf(size);
+                usernames.setText(t);
+                //Toast.makeText(getApplicationContext(), t, Toast.LENGTH_LONG).show();
+                username[0] = t;
+                usernames.setText(username[0]);
+
+
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+
 
         admin_signup_submit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,13 +94,13 @@ public class admin_signup extends AppCompatActivity {
 
                 final String password = admin_signup_password.getText().toString().trim();
                 final String society = admin_signup_society.getText().toString().trim();
-                final String username = society + "_admin";
+
                 String password_2 = admin_signup_password_2.getText().toString().trim();
 
-                if(TextUtils.isEmpty(username)) {
-                    Toast.makeText(admin_signup.this,"Please enter your username",Toast.LENGTH_SHORT).show();
-                    return;
-                }
+//                if(TextUtils.isEmpty(username[0])) {
+//                    Toast.makeText(admin_signup.this,"Please enter your username",Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
 
                 if(TextUtils.isEmpty(password)){
                     Toast.makeText(admin_signup.this,"Please enter your password",Toast.LENGTH_SHORT).show();
@@ -85,40 +122,48 @@ public class admin_signup extends AppCompatActivity {
                     return;
                 }
 
+
                 Query query = mDatabase
                         .child("Admin")
                         .orderByChild("username")
-                        .equalTo(username);
+                        .equalTo(username[0]);
 
                 query.addListenerForSingleValueEvent(new ValueEventListener(){
                     @Override
                     public void onDataChange(DataSnapshot dataSnapshot) {
 
-                        if(dataSnapshot.getValue()!=null) {
-                            Toast.makeText(getApplicationContext(),"Username already taken",Toast.LENGTH_LONG).show();
+                        if (dataSnapshot.getValue() != null) {
+                            Toast.makeText(getApplicationContext(), "Username already taken", Toast.LENGTH_LONG).show();
                             return;
-                        }else{
+                        } else {
+
+                            long size = dataSnapshot.getChildrenCount();
+                            String t = "";
+                            t = t + String.valueOf(size);
+                            Toast.makeText(getApplicationContext(), t, Toast.LENGTH_LONG).show();
 
                             HashMap<String, String> userData = new HashMap<String, String>();
 
-                            String y = username + "_" + password;
+                            String y = username[0] + "_" + password;
 
-                            userData.put("Username", username);
+                            userData.put("Username", username[0]);
                             userData.put("Password", password);
                             userData.put("Society", society);
-                            userData.put("username_password",y);
+                            userData.put("username_password", y);
+                            userData.put("cost", String.valueOf(0));
 
-                            Log.d("hello","how");
+
+                            Log.d("hello", "how");
 
                             mDatabase.child("Admin").push().setValue(userData);
 
-            //              mDatabase.child("Hello").setValue(userData);
+                            //              mDatabase.child("Hello").setValue(userData);
 
 
                             startActivity(new Intent(getApplicationContext(), admin_login.class));
                             finish();
 
-                            Log.d("hello1","how1");
+                            Log.d("hello1", "how1");
 
 
                         }

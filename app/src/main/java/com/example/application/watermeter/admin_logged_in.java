@@ -20,6 +20,7 @@ public class admin_logged_in extends AppCompatActivity {
         String username = intent.getStringExtra("username");
         String password = intent.getStringExtra("password");
         String society = intent.getStringExtra("society");
+        String cost = intent.getStringExtra("cost");
 
         admin_username = (TextView) findViewById(R.id.admin_username);
         admin_username.setText("Hi " + username + " , \n Welcome to your dashboard\n");
@@ -38,11 +39,13 @@ public class admin_logged_in extends AppCompatActivity {
         String username = intent.getStringExtra("username");
         String password = intent.getStringExtra("password");
         String society = intent.getStringExtra("society");
+        String cost = intent.getStringExtra("cost");
 
         Intent i = new Intent(getApplicationContext(), user_signup.class);
         i.putExtra("username", username);
         i.putExtra("password", password);
         i.putExtra("society",society);
+        i.putExtra("cost",cost);
         startActivity(i);
         finish();
     }

@@ -94,6 +94,7 @@ public class admin_login extends AppCompatActivity {
                         i.putExtra("password", map.get("Password").toString());
                         i.putExtra("society",map.get("Society").toString());
                         i.putExtra("username_password",map.get("username_password").toString());
+                        i.putExtra("cost",map.get("cost").toString());
                         startActivity(i);
                         finish();
                         break;

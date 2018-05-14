@@ -48,7 +48,7 @@
         android:hint="Enter flat number"
         android:inputType="textPersonName" />
 
-
+<!--
     <EditText
         android:id="@+id/user_cost"
         android:layout_width="wrap_content"
@@ -60,30 +60,30 @@
         android:hint="Enter cost per unit"
         android:inputType="textPersonName" />
 
-    <Spinner
-        android:id="@+id/user_signup_date"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/user_cost"
-        android:layout_alignRight="@+id/user_cost"
-        android:layout_below="@+id/user_cost"
-        android:layout_marginTop="20dp" />
+        <Spinner
+            android:id="@+id/user_signup_date"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/user_cost"
+            android:layout_alignRight="@+id/user_cost"
+            android:layout_below="@+id/user_cost"
+            android:layout_marginTop="20dp" />
 
-    <Spinner
-        android:id="@+id/user_signup_month"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/user_signup_date"
-        android:layout_alignLeft="@+id/user_signup_date"
-        android:layout_alignStart="@+id/user_signup_date" />
+        <Spinner
+            android:id="@+id/user_signup_month"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_signup_date"
+            android:layout_alignLeft="@+id/user_signup_date"
+            android:layout_alignStart="@+id/user_signup_date" />
 
-    <Spinner
-        android:id="@+id/user_signup_year"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/user_signup_month"
-        android:layout_alignStart="@+id/user_signup_month"
-        android:layout_below="@+id/user_signup_month" />
+        <Spinner
+            android:id="@+id/user_signup_year"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/user_signup_month"
+            android:layout_alignStart="@+id/user_signup_month"
+            android:layout_below="@+id/user_signup_month" /> -
 
     <TextView
         android:id="@+id/textView"
@@ -110,6 +110,13 @@
         android:layout_alignBottom="@+id/user_signup_year"
         android:layout_alignLeft="@+id/textView2"
         android:layout_alignStart="@+id/textView2"
-        android:text="Select year" />
+        android:text="Select year" />-->
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
 
 </RelativeLayout>
