@@ -59,9 +59,9 @@ public class admin_login extends AppCompatActivity {
         });
     }
 
-    public void choosen_admin_signup(View view){
-        startActivity(new Intent(getApplicationContext(), admin_signup.class));
-    }
+//    public void choosen_admin_signup(View view){
+//        startActivity(new Intent(getApplicationContext(), admin_signup.class));
+//    }
 
     public void fetchData(String username,String password ){
 

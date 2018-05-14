@@ -1,11 +1,7 @@
 #Internal package file, do not edit.
-#Tue Apr 10 12:27:40 IST 2018
-1.base=C\:\\Users\\Abhin\\AndroidStudioProjects\\WaterMeter\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+#Mon May 14 19:06:50 IST 2018
 0.baseType=DIRECTORY
-1.baseType=DIRECTORY
-count=2
-1.set=DEX
+0.base=/Users/roshani/Documents/GitHub/Water-Meter/app/build/intermediates/transforms/dexMerger/debug/0
 0.path=classes.dex
 0.set=DEX
-0.base=C\:\\Users\\Abhin\\AndroidStudioProjects\\WaterMeter\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
-1.path=classes.dex
+count=1

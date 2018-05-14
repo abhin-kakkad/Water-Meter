@@ -21,7 +21,7 @@ public class admin_logged_in extends AppCompatActivity {
         String password = intent.getStringExtra("password");
         String society = intent.getStringExtra("society");
 
-        admin_username = (TextView) findViewById(R.id.admin_username);
+        //admin_username = (TextView) findViewById(R.id.admin_username);
         admin_username.setText("Hi " + username + " , \n Welcome to your dashboard\n");
     }
 

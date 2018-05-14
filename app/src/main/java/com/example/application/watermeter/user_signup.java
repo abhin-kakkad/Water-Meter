@@ -50,19 +50,19 @@ public class user_signup extends AppCompatActivity {
         user_flat = (EditText)findViewById(R.id.user_flat);
         user_initial_reading = (EditText)findViewById(R.id.user_initial_reading);
         user_signed_up = (Button)findViewById(R.id.user_signed_up);
-        user_cost = (EditText)findViewById(R.id.user_cost);
+        //user_cost = (EditText)findViewById(R.id.user_cost);
         user_signup_mobile_number = (EditText)findViewById(R.id.user_signup_mobile_number);
-        user_signup_date = (Spinner)findViewById(R.id.user_signup_date);
+        //user_signup_date = (Spinner)findViewById(R.id.user_signup_date);
         dates = ArrayAdapter.createFromResource(this,R.array.Dates,android.R.layout.simple_spinner_item);
         dates.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         user_signup_date.setAdapter(dates);
 
-        user_signup_month = (Spinner)findViewById(R.id.user_signup_month);
+        //user_signup_month = (Spinner)findViewById(R.id.user_signup_month);
         months = ArrayAdapter.createFromResource(this,R.array.Months,android.R.layout.simple_spinner_item);
         months.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         user_signup_month.setAdapter(months);
 
-        user_signup_year = (Spinner)findViewById(R.id.user_signup_year);
+        //user_signup_year = (Spinner)findViewById(R.id.user_signup_year);
         years = ArrayAdapter.createFromResource(this,R.array.Years,android.R.layout.simple_spinner_item);
         years.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         user_signup_year.setAdapter(years);

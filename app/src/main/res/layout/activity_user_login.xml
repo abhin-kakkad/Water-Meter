@@ -6,46 +6,53 @@
     android:layout_height="match_parent"
     tools:context="com.example.application.watermeter.user_login">
 
-    <EditText
-        android:id="@+id/user_login_username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="128dp"
-        android:ems="10"
-        android:hint="Enter your username"
-        android:inputType="textPersonName" />
-
-    <EditText
-        android:id="@+id/user_login_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/user_login_username"
-        android:layout_alignRight="@+id/user_login_username"
-        android:layout_below="@+id/user_login_username"
-        android:layout_marginTop="137dp"
-        android:ems="10"
-        android:hint="Enter your password"
-        android:inputType="textPassword" />
-
     <Button
         android:id="@+id/user_login_submit"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/button_round"
+        android:textColor="@android:color/white"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="27dp"
         android:text="Login" />
 
     <EditText
         android:id="@+id/user_login_admin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/button_round"
         android:ems="10"
-        android:hint="Enter name of your admin"
+        android:hint="Enter your Society Number"
+        android:textColorHint="@android:color/white"
+        android:padding="5dp"
         android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/user_login_username"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/up"
+        android:ems="10"
+        android:hint="Enter your username"
+        android:textColorHint="@android:color/white"
+        android:padding="5dp"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/user_login_password"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="302dp"
+        android:background="@drawable/down"
+        android:ems="10"
+        android:hint="Enter your password"
+        android:textColorHint="@android:color/white"
+        android:padding="5dp"
+        android:inputType="textPassword" />
+
 </RelativeLayout>
