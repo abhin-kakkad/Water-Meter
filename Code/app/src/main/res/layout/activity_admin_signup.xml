@@ -49,4 +49,12 @@
         android:hint="Re-enter your password"
         android:inputType="textPassword" />
 
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/admin_signup_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp" />
+
 </RelativeLayout>
