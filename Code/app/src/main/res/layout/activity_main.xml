@@ -5,25 +5,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.application.watermeter.MainActivity">
-
     <Button
         android:id="@+id/Admin"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="122dp"
         android:onClick="choosen_admin"
-        android:text="Admin" />
+        android:layout_marginTop="300dp"
+        android:padding="5dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_round"
+        android:text="Login as Admin" />
 
     <Button
         android:id="@+id/User"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="choosen_user"
+        android:layout_marginTop="350dp"
+        android:padding="5dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_round"
+        android:text="Login as User" />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/Admin"
-        android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/Admin"
-        android:layout_marginBottom="130dp"
-        android:onClick="choosen_user"
-        android:text="User" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:textColor="@color/colorPrimary"
+        android:text="Society not signed up yet?"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="425dp"
+        android:textColor="@color/colorAccent"
+        android:text="Sign up here!"
+        android:onClick="choosen_signUp"/>
+
 </RelativeLayout>

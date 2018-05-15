@@ -8,44 +8,38 @@
 
     <EditText
         android:id="@+id/admin_login_username"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/add_user_data"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/up"
         android:ems="10"
         android:hint="Enter your username"
+        android:textColorHint="@android:color/white"
+        android:padding="5dp"
         android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/admin_login_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/user_login_submit"
-        android:layout_alignLeft="@+id/admin_login_username"
-        android:layout_alignStart="@+id/admin_login_username"
-        android:layout_marginBottom="97dp"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="302dp"
+        android:background="@drawable/down"
         android:ems="10"
-        android:hint="Entre your password"
+        android:hint="Enter your password"
+        android:textColorHint="@android:color/white"
+        android:padding="5dp"
         android:inputType="textPassword" />
 
     <Button
-        android:id="@+id/add_user_data"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="45dp"
-        android:onClick="choosen_admin_signup"
-        android:text="SignUp" />
-
-    <Button
         android:id="@+id/user_login_submit"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/add_user_data"
-        android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/add_user_data"
-        android:layout_marginBottom="37dp"
-        android:text="Submit" />
+        android:layout_marginTop="400dp"
+        android:background="@drawable/button_round"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:text="Login" />
+
 </RelativeLayout>

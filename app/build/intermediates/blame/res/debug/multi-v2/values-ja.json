@@ -1,10 +1,34 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "/Users/nish_1612/Documents/GitHub/Water-Meter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml",
             "map": [
                 {
                     "source": "/Users/nish_1612/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/f863e33756c50e59bbb0eeaef05ef43e/res/values-ja/values.xml",
+=======
+            "outputFile": "/Users/roshani/Documents/GitHub/Water-Meter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml",
+            "map": [
+                {
+                    "source": "/Users/roshani/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.4.aar/eff2ac501e60930a3ba51a4069dacc7e/res/values-ja/values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "283,385,551,669,773,962,1080,1204,1395,1494,1658,1775,1954,2100,2186,2271",
+                        "endColumns": "101,165,117,103,188,117,123,190,98,163,116,178,145,85,84,95",
+                        "endOffsets": "384,550,668,772,961,1079,1203,1394,1493,1657,1774,1953,2099,2185,2270,2366"
+                    },
+                    "to": {
+                        "startLines": "21,22,23,24,25,26,27,29,30,31,32,33,34,35,36,37",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "1945,2051,2217,2339,2447,2636,2758,3067,3258,3361,3525,3646,3825,3975,4065,4154",
+                        "endColumns": "105,165,121,107,188,121,127,190,102,163,120,178,149,89,88,99",
+                        "endOffsets": "2046,2212,2334,2442,2631,2753,2881,3253,3356,3520,3641,3820,3970,4060,4149,4249"
+                    }
+                },
+                {
+                    "source": "/Users/roshani/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.4.aar/51ace53a8164b88b7821f45192331f37/res/values-ja/values.xml",
+>>>>>>> master
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -21,7 +45,11 @@
                     }
                 },
                 {
+<<<<<<< HEAD
                     "source": "/Users/nish_1612/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8b056b6ef62e41f514141b8568411799/res/values-ja/values-ja.xml",
+=======
+                    "source": "/Users/roshani/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/5ac61a3ea3516cd909700de631a2d7d0/res/values-ja/values-ja.xml",
+>>>>>>> master
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
