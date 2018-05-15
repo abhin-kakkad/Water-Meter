@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "A:\\AKK\\Projects\\WaterMeter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr-rCA\\values-fr-rCA.xml",
+            "outputFile": "A:\\AKK\\Projects\\Water-Meter\\Code\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fr-rCA\\values-fr-rCA.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Abhin\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-basement-11.0.4.aar\\a3a8c35720f8fcf600aa9991a4d89722\\res\\values-fr-rCA\\values.xml",

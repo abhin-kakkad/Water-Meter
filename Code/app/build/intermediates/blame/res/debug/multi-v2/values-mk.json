@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "A:\\AKK\\Projects\\WaterMeter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mk\\values-mk.xml",
+            "outputFile": "A:\\AKK\\Projects\\Water-Meter\\Code\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-mk\\values-mk.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Abhin\\.gradle\\caches\\transforms-1\\files-1.1\\play-services-base-11.0.4.aar\\ac2840f43283e0b756bc3644eac0a2ea\\res\\values-mk\\values.xml",

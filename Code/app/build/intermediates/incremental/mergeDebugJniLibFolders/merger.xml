@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="A:\AKK\Projects\WaterMeter\app\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="A:\AKK\Projects\WaterMeter\app\src\debug\jniLibs"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="A:\AKK\Projects\Water-Meter\Code\app\src\main\jniLibs"/></dataSet><dataSet config="debug"><source path="A:\AKK\Projects\Water-Meter\Code\app\src\debug\jniLibs"/></dataSet></merger>

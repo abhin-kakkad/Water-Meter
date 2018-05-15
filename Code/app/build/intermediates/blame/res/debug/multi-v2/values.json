@@ -1,8 +1,44 @@
 {
     "logs": [
         {
-            "outputFile": "A:\\AKK\\Projects\\WaterMeter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "A:\\AKK\\Projects\\Water-Meter\\Code\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
+                {
+                    "source": "A:\\AKK\\Projects\\Water-Meter\\Code\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "2,35,49,1",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "67,887,1292,17",
+                        "endLines": "34,48,52,1",
+                        "endColumns": "19,19,19,48",
+                        "endOffsets": "881,1286,1394,61"
+                    },
+                    "to": {
+                        "startLines": "2,35,49,602",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "105,892,1283,50852",
+                        "endLines": "34,48,52,602",
+                        "endColumns": "19,19,19,48",
+                        "endOffsets": "887,1278,1382,50896"
+                    }
+                },
+                {
+                    "source": "A:\\AKK\\Projects\\Water-Meter\\Code\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,311,393,497,600,720,821",
+                        "endColumns": "143,111,81,103,102,119,100,77",
+                        "endOffsets": "194,306,388,492,595,715,816,894"
+                    },
+                    "to": {
+                        "startLines": "620,621,622,623,624,625,626,627",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "53118,53262,53374,53456,53560,53663,53783,53884",
+                        "endColumns": "143,111,81,103,102,119,100,77",
+                        "endOffsets": "53257,53369,53451,53555,53658,53778,53879,53957"
+                    }
+                },
                 {
                     "source": "C:\\Users\\Abhin\\.gradle\\caches\\transforms-1\\files-1.1\\constraint-layout-1.0.2.aar\\51c34c4d2cadf9948df2494b27a95ef3\\res\\values\\values.xml",
                     "from": {
@@ -23,22 +59,22 @@
                     }
                 },
                 {
-                    "source": "A:\\AKK\\Projects\\WaterMeter\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "A:\\AKK\\Projects\\Water-Meter\\Code\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
-                        "startLines": "2,35,49,1",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "65,852,1243,16",
-                        "endLines": "34,48,52,1",
-                        "endColumns": "19,19,19,48",
-                        "endOffsets": "847,1238,1342,60"
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "8",
+                        "endColumns": "12",
+                        "endOffsets": "374"
                     },
                     "to": {
-                        "startLines": "2,35,49,602",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "105,892,1283,50852",
-                        "endLines": "34,48,52,602",
-                        "endColumns": "19,19,19,48",
-                        "endOffsets": "887,1278,1382,50896"
+                        "startLines": "635",
+                        "startColumns": "4",
+                        "startOffsets": "54528",
+                        "endLines": "640",
+                        "endColumns": "12",
+                        "endOffsets": "54840"
                     }
                 },
                 {
@@ -93,13 +129,13 @@
                     }
                 },
                 {
-                    "source": "A:\\AKK\\Projects\\WaterMeter\\app\\src\\main\\res\\values\\colors.xml",
+                    "source": "A:\\AKK\\Projects\\Water-Meter\\Code\\app\\src\\main\\res\\values\\colors.xml",
                     "from": {
                         "startLines": "4,2,3",
                         "startColumns": "4,4,4",
-                        "startOffsets": "153,55,102",
+                        "startOffsets": "157,57,105",
                         "endColumns": "45,46,50",
-                        "endOffsets": "194,97,148"
+                        "endOffsets": "198,99,151"
                     },
                     "to": {
                         "startLines": "169,170,171",
@@ -126,42 +162,6 @@
                         "endLines": "201,202,512,513,514,515,516,526,527,528,529,530,531,532,533,534,535,536,537,538,539,540,549,550,556,557,561,562,563,570,629,1897,1901,1903,1909,1911,2049,2050",
                         "endColumns": "68,62,69,67,71,69,60,60,60,61,63,61,60,67,99,59,65,72,68,56,51,61,71,75,34,34,33,34,34,69,70,116,12,109,12,128,71,66",
                         "endOffsets": "9687,9750,45007,45075,45147,45217,45278,46123,46184,46246,46310,46372,46433,46501,46601,46661,46727,46800,46869,46926,46978,47040,47565,47641,47915,47950,48126,48161,48196,48609,54081,138168,138369,138545,138929,139124,150089,150156"
-                    }
-                },
-                {
-                    "source": "A:\\AKK\\Projects\\WaterMeter\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "3",
-                        "startColumns": "4",
-                        "startOffsets": "54",
-                        "endLines": "8",
-                        "endColumns": "12",
-                        "endOffsets": "366"
-                    },
-                    "to": {
-                        "startLines": "635",
-                        "startColumns": "4",
-                        "startOffsets": "54528",
-                        "endLines": "640",
-                        "endColumns": "12",
-                        "endOffsets": "54840"
-                    }
-                },
-                {
-                    "source": "A:\\AKK\\Projects\\WaterMeter\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,311,393,497,600,720,821",
-                        "endColumns": "143,111,81,103,102,119,100,77",
-                        "endOffsets": "194,306,388,492,595,715,816,894"
-                    },
-                    "to": {
-                        "startLines": "620,621,622,623,624,625,626,627",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "53118,53262,53374,53456,53560,53663,53783,53884",
-                        "endColumns": "143,111,81,103,102,119,100,77",
-                        "endOffsets": "53257,53369,53451,53555,53658,53778,53879,53957"
                     }
                 },
                 {

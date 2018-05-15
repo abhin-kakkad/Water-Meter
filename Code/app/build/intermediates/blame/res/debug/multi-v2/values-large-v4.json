@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "A:\\AKK\\Projects\\WaterMeter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
+            "outputFile": "A:\\AKK\\Projects\\Water-Meter\\Code\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-large-v4\\values-large-v4.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Abhin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\40a10fbc531a702c4e41b09fb1c99200\\res\\values-large-v4\\values-large-v4.xml",
