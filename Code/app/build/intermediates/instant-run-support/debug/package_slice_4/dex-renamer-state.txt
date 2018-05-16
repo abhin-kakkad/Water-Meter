@@ -1,4 +1,0 @@
-#Thu Apr 05 17:30:34 IST 2018
-base.0=/Users/nish_1612/AndroidStudioProjects/WaterMeter/app/build/intermediates/transforms/dexMerger/debug/5
-path.0=classes.dex
-renamed.0=classes.dex

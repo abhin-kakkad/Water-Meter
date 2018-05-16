@@ -1,4 +1,0 @@
-#Wed May 02 11:40:11 IST 2018
-base.0=A\:\\AKK\\Projects\\WaterMeter\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex

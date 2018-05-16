@@ -7,46 +7,63 @@
     tools:context="com.example.application.watermeter.user_signup">
 
     <EditText
-        android:id="@+id/user_signup_mobile_number"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:id="@+id/user_flat"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="103dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/up"
+        android:textColorHint="@android:color/white"
+        android:padding="5dp"
         android:ems="10"
-        android:hint="Enter your mobile number"
+        android:hint="Enter Flat number"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/user_signup_mobile_number"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:background="#abcdef"
+        android:textColorHint="@android:color/white"
+        android:padding="5dp"
+        android:ems="10"
+        android:hint="Enter User's Mobile number"
         android:inputType="textPassword" />
 
     <EditText
         android:id="@+id/user_initial_reading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/user_flat"
-        android:layout_alignStart="@+id/user_flat"
-        android:layout_below="@+id/user_flat"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="#abcdef"
+        android:layout_marginTop="250dp"
+        android:textColorHint="@android:color/white"
+        android:padding="5dp"
         android:ems="10"
         android:hint="Enter initial reading"
         android:inputType="textPersonName" />
 
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/down"
+        android:layout_marginTop="300dp"
+        android:padding="5dp"
+        android:ems="10"
+        android:layout_centerHorizontal="true" />
+
     <Button
         android:id="@+id/user_signed_up"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_marginTop="400dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="38dp"
+        android:background="@drawable/button_round"
+        android:textColor="@android:color/white"
         android:text="ADD user" />
-
-    <EditText
-        android:id="@+id/user_flat"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/user_signup_mobile_number"
-        android:layout_alignStart="@+id/user_signup_mobile_number"
-        android:layout_below="@+id/user_signup_mobile_number"
-        android:ems="10"
-        android:hint="Enter flat number"
-        android:inputType="textPersonName" />
 
 <!--
     <EditText
@@ -112,11 +129,6 @@
         android:layout_alignStart="@+id/textView2"
         android:text="Select year" />-->
 
-    <TextView
-        android:id="@+id/date"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true" />
+
 
 </RelativeLayout>

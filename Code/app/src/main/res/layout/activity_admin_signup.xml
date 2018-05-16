@@ -8,8 +8,8 @@
 
     <EditText
         android:id="@+id/admin_signup_password"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:layout_alignLeft="@+id/admin_signup_password_2"
         android:layout_alignStart="@+id/admin_signup_password_2"
         android:layout_alignTop="@+id/admin_signup_society"
