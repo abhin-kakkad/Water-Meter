@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:2:1-29:12
+ADDED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:2:1-30:12
 MERGED from [com.google.firebase:firebase-core:11.0.4] /Users/nish_1612/.gradle/caches/transforms-1/files-1.1/firebase-core-11.0.4.aar/80593bc4542b52d3933364fe3a9b60ae/AndroidManifest.xml:2:1-6:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/nish_1612/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8b056b6ef62e41f514141b8568411799/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/nish_1612/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/27fd6e830944991ce91eba5bf7afbb9b/AndroidManifest.xml:2:1-11:12
@@ -26,25 +26,25 @@ MERGED from [com.android.support:support-media-compat:26.1.0] /Users/nish_1612/.
 MERGED from [com.android.support:support-core-utils:26.1.0] /Users/nish_1612/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/3817e0a3ef007d56a3b3755b5d01ae5b/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] /Users/nish_1612/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/89c3f33d6a9eed3d7486f0a742f51924/AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/nish_1612/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/730a4f4937ba14b18e7965c03d32c754/AndroidManifest.xml:17:1-30:12
-INJECTED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:2:1-29:12
-INJECTED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:2:1-29:12
+INJECTED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:2:1-30:12
+INJECTED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:2:1-30:12
 	package
 		ADDED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:3:5-49
 		INJECTED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml
-		ADDED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:2:1-29:12
+		ADDED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:2:1-30:12
 		INJECTED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml
-		ADDED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:2:1-29:12
+		ADDED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:2:1-30:12
 		INJECTED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:5:5-27:19
+ADDED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:5:5-28:19
 MERGED from [com.google.firebase:firebase-core:11.0.4] /Users/nish_1612/.gradle/caches/transforms-1/files-1.1/firebase-core-11.0.4.aar/80593bc4542b52d3933364fe3a9b60ae/AndroidManifest.xml:5:5-20
 MERGED from [com.google.firebase:firebase-core:11.0.4] /Users/nish_1612/.gradle/caches/transforms-1/files-1.1/firebase-core-11.0.4.aar/80593bc4542b52d3933364fe3a9b60ae/AndroidManifest.xml:5:5-20
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/nish_1612/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8b056b6ef62e41f514141b8568411799/AndroidManifest.xml:25:5-29:19
@@ -140,9 +140,13 @@ ADDED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidMan
 	android:name
 		ADDED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:25:19-49
 activity#com.example.application.watermeter.user_change_password
-ADDED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:26:9-67
+ADDED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:26:9-58
 	android:name
 		ADDED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:26:19-55
+activity#com.example.application.watermeter.EnterSocietyDetails
+ADDED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:27:9-66
+	android:name
+		ADDED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml:27:19-54
 uses-sdk
 INJECTED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/AndroidManifest.xml

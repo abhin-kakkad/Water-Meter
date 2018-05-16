@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="78dp"
+        android:layout_marginBottom="47dp"
         android:text="SIGNUP" />
 
     <EditText
@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/admin_signup_password"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="41dp"
+        android:layout_marginTop="61dp"
         android:ems="10"
         android:hint="Re-enter your password"
         android:inputType="textPassword" />
@@ -55,6 +55,26 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/admin_signup_password"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="15dp" />
+        android:layout_marginBottom="15dp"
+        android:text="Your Username :   "
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/admin_signup_password_2"
+        android:layout_alignStart="@+id/admin_signup_password_2"
+        android:layout_below="@+id/admin_signup_password_2"
+        android:layout_marginTop="84dp"
+        android:text="Enter your method for water meter" />
 
 </RelativeLayout>

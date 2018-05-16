@@ -12,6 +12,10 @@
         "source": "/Users/nish_1612/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8b056b6ef62e41f514141b8568411799/res/drawable-ldrtl-xxxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
+        "merged": "/Users/nish_1612/Documents/GitHub/Water-Meter/app/build/intermediates/res/merged/debug/layout_activity_enter_society_details.xml.flat",
+        "source": "/Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/res/layout/activity_enter_society_details.xml"
+    },
+    {
         "merged": "/Users/nish_1612/Documents/GitHub/Water-Meter/app/build/intermediates/res/merged/debug/anim_abc_slide_out_bottom.xml.flat",
         "source": "/Users/nish_1612/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8b056b6ef62e41f514141b8568411799/res/anim/abc_slide_out_bottom.xml"
     },

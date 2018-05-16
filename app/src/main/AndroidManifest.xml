@@ -23,7 +23,8 @@
         <activity android:name=".user_signup" />
         <activity android:name=".add_user_data" />
         <activity android:name=".user_logged_in" />
-        <activity android:name=".user_change_password"></activity>
+        <activity android:name=".user_change_password" />
+        <activity android:name=".EnterSocietyDetails"></activity>
     </application>
 
 </manifest>
