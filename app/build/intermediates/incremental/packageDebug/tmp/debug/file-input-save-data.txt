@@ -1,13 +1,7 @@
 #Internal package file, do not edit.
-<<<<<<< HEAD
-#Mon May 14 14:39:54 IST 2018
+#Thu May 17 22:21:14 IST 2018
 0.baseType=DIRECTORY
-0.base=/Users/nish_1612/Documents/GitHub/Water-Meter/app/build/intermediates/transforms/dexMerger/debug/15
-=======
-#Mon May 14 19:06:50 IST 2018
-0.baseType=DIRECTORY
-0.base=/Users/roshani/Documents/GitHub/Water-Meter/app/build/intermediates/transforms/dexMerger/debug/0
->>>>>>> master
+0.base=A\:\\AKK\\Projects\\Water-Meter\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 0.path=classes.dex
 0.set=DEX
 count=1

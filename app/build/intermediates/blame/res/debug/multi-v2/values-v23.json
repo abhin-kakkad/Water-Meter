@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "/Users/nish_1612/Documents/GitHub/Water-Meter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "A:\\AKK\\Projects\\Water-Meter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "/Users/nish_1612/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8b056b6ef62e41f514141b8568411799/res/values-v23/values-v23.xml",
-=======
-            "outputFile": "/Users/roshani/Documents/GitHub/Water-Meter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
-            "map": [
-                {
-                    "source": "/Users/roshani/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/5ac61a3ea3516cd909700de631a2d7d0/res/values-v23/values-v23.xml",
->>>>>>> master
+                    "source": "C:\\Users\\Abhin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\08cf6c916a11fa98f4e310f941c7d50b\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

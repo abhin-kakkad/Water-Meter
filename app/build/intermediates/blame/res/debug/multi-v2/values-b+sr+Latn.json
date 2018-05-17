@@ -1,17 +1,10 @@
 {
     "logs": [
         {
-<<<<<<< HEAD
-            "outputFile": "/Users/nish_1612/Documents/GitHub/Water-Meter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml",
+            "outputFile": "A:\\AKK\\Projects\\Water-Meter\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-b+sr+Latn\\values-b+sr+Latn.xml",
             "map": [
                 {
-                    "source": "/Users/nish_1612/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8b056b6ef62e41f514141b8568411799/res/values-b+sr+Latn/values-b+sr+Latn.xml",
-=======
-            "outputFile": "/Users/roshani/Documents/GitHub/Water-Meter/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-b+sr+Latn/values-b+sr+Latn.xml",
-            "map": [
-                {
-                    "source": "/Users/roshani/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/5ac61a3ea3516cd909700de631a2d7d0/res/values-b+sr+Latn/values-b+sr+Latn.xml",
->>>>>>> master
+                    "source": "C:\\Users\\Abhin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\08cf6c916a11fa98f4e310f941c7d50b\\res\\values-b+sr+Latn\\values-b+sr+Latn.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

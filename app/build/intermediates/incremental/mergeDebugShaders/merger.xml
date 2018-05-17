@@ -1,6 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<merger version="3"><dataSet config="main"><source path="/Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/Users/nish_1612/Documents/GitHub/Water-Meter/app/src/debug/shaders"/></dataSet></merger>
-=======
-<merger version="3"><dataSet config="main"><source path="/Users/roshani/Documents/GitHub/Water-Meter/app/src/main/shaders"/></dataSet><dataSet config="debug"><source path="/Users/roshani/Documents/GitHub/Water-Meter/app/src/debug/shaders"/></dataSet></merger>
->>>>>>> master
+<merger version="3"><dataSet config="main"><source path="A:\AKK\Projects\Water-Meter\app\src\main\shaders"/></dataSet><dataSet config="debug"><source path="A:\AKK\Projects\Water-Meter\app\src\debug\shaders"/></dataSet></merger>

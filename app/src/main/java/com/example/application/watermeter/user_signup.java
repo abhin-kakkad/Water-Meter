@@ -9,6 +9,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -18,6 +19,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.HashMap;
 
@@ -25,15 +27,16 @@ public class user_signup extends AppCompatActivity {
 
     private EditText user_flat;
     private EditText user_initial_reading;
-    private EditText user_cost;
+    //private EditText user_cost;
     private EditText user_signup_mobile_number;
     private Button user_signed_up;
-    private Spinner user_signup_date;
-    private Spinner user_signup_month;
-    private Spinner user_signup_year;
-    private ArrayAdapter<CharSequence> dates;
-    private ArrayAdapter<CharSequence> months;
-    private ArrayAdapter<CharSequence> years;
+//    private Spinner user_signup_date;
+//    private Spinner user_signup_month;
+//    private Spinner user_signup_year;
+//    private ArrayAdapter<CharSequence> dates;
+//    private ArrayAdapter<CharSequence> months;
+//    private ArrayAdapter<CharSequence> years;
+    private TextView txtView;
 
     private DatabaseReference mDatabase;
 
@@ -47,25 +50,36 @@ public class user_signup extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_signup);
 
+        Calendar c = Calendar.getInstance();
+        System.out.println("Current time => "+c.getTime());
+
+        txtView = (TextView) findViewById(R.id.date);
+
+        SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+        final String formattedDate = df.format(c.getTime());
+
+        txtView.setText(formattedDate);
+
         user_flat = (EditText)findViewById(R.id.user_flat);
         user_initial_reading = (EditText)findViewById(R.id.user_initial_reading);
         user_signed_up = (Button)findViewById(R.id.user_signed_up);
         //user_cost = (EditText)findViewById(R.id.user_cost);
         user_signup_mobile_number = (EditText)findViewById(R.id.user_signup_mobile_number);
-        //user_signup_date = (Spinner)findViewById(R.id.user_signup_date);
-        dates = ArrayAdapter.createFromResource(this,R.array.Dates,android.R.layout.simple_spinner_item);
-        dates.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        user_signup_date.setAdapter(dates);
 
-        //user_signup_month = (Spinner)findViewById(R.id.user_signup_month);
-        months = ArrayAdapter.createFromResource(this,R.array.Months,android.R.layout.simple_spinner_item);
-        months.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        user_signup_month.setAdapter(months);
-
-        //user_signup_year = (Spinner)findViewById(R.id.user_signup_year);
-        years = ArrayAdapter.createFromResource(this,R.array.Years,android.R.layout.simple_spinner_item);
-        years.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        user_signup_year.setAdapter(years);
+//        user_signup_date = (Spinner)findViewById(R.id.user_signup_date);
+//        dates = ArrayAdapter.createFromResource(this,R.array.Dates,android.R.layout.simple_spinner_item);
+//        dates.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        user_signup_date.setAdapter(dates);
+//
+//        user_signup_month = (Spinner)findViewById(R.id.user_signup_month);
+//        months = ArrayAdapter.createFromResource(this,R.array.Months,android.R.layout.simple_spinner_item);
+//        months.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        user_signup_month.setAdapter(months);
+//
+//        user_signup_year = (Spinner)findViewById(R.id.user_signup_year);
+//        years = ArrayAdapter.createFromResource(this,R.array.Years,android.R.layout.simple_spinner_item);
+//        years.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+//        user_signup_year.setAdapter(years);
 
         /*final String[] date = {""};
 
@@ -192,6 +206,7 @@ public class user_signup extends AppCompatActivity {
                 final String username1 = intent.getStringExtra("username");
                 final String password1 = intent.getStringExtra("password");
                 final String society1 = intent.getStringExtra("society");
+                final String cost = intent.getStringExtra("cost");
 
                 Query query = mDatabase
                         .child("Admin").child(username1)
@@ -302,7 +317,7 @@ public class user_signup extends AppCompatActivity {
 
                         final String flat = user_flat.getText().toString().trim();
                         final String initial_reading = user_initial_reading.getText().toString().trim();
-                        final String cost = user_cost.getText().toString().trim();
+                        //final String cost = user_cost.getText().toString().trim();
                         final String password = user_signup_mobile_number.getText().toString().trim();
 
                         if(dataSnapshot.getValue()!=null) {
@@ -325,108 +340,116 @@ public class user_signup extends AppCompatActivity {
                                 return;
                             }
 
-                            if(TextUtils.isEmpty(cost)){
-                                Toast.makeText(user_signup.this,"Please enter cost for one month",Toast.LENGTH_SHORT).show();
-                                return;
-                            }
+//                            if(TextUtils.isEmpty(cost)){
+//                                Toast.makeText(user_signup.this,"Please enter cost for one month",Toast.LENGTH_SHORT).show();
+//                                return;
+//                            }
 
-                            String month = user_signup_month.getSelectedItem().toString();
+                            String year = "";
+                            year = year+ formattedDate.charAt(0) + formattedDate.charAt(1) + formattedDate.charAt(2) + formattedDate.charAt(3);//user_signup_month.getSelectedItem().toString();
 
-                            String date = user_signup_date.getSelectedItem().toString();
-
-
-                            if(date.equals("1")){
-                                date = "01";
-                            }else if(date.equals("2")){
-                                date = "02";
-                            }else if(date.equals("3")){
-                                date = "03";
-                            }else if(date.equals("4")){
-                                date = "04";
-                            }else if(date.equals("5")){
-                                date = "05";
-                            }else if(date.equals("6")){
-                                date = "06";
-                            }else if(date.equals("7")){
-                                date = "07";
-                            }else if(date.equals("8")){
-                                date = "08";
-                            }else if(date.equals("9")){
-                                date = "09";
-                            }
-
-                            if(month.equals("January")){
-                                month = "01";
-                            }else if(month.equals("February")){
-                                if(date.equals("29") || date.equals("30") || date.equals("31")){
-                                    Toast.makeText(getApplicationContext(),"Invalid Date Entered",Toast.LENGTH_LONG).show();
-                                    return ;
-                                }
-                                month = "02";
-                            }else if(month.equals("March")){
-                                month = "03";
-                            }else if(month.equals("April")){
-                                if(date.equals("31")){
-                                    Toast.makeText(getApplicationContext(),"Invalid Date Entered",Toast.LENGTH_LONG).show();
-                                    return ;
-                                }
-                                month = "04";
-                            }else if(month.equals("May")){
-                                month = "05";
-                            }else if(month.equals("June")){
-                                if(date.equals("31")){
-                                    Toast.makeText(getApplicationContext(),"Invalid Date Entered",Toast.LENGTH_LONG).show();
-                                    return ;
-                                }
-                                month = "06";
-                            }else if(month.equals("July")){
-                                month = "07";
-                            }else if(month.equals("August")){
-                                month = "08";
-                            }else if(month.equals("September")){
-                                if(date.equals("31")){
-                                    Toast.makeText(getApplicationContext(),"Invalid Date Entered",Toast.LENGTH_LONG).show();
-                                    return ;
-                                }
-                                month = "09";
-                            }else if(month.equals("October")){
-                                month = "10";
-                            }else if(month.equals("November")){
-                                if(date.equals("31")){
-                                    Toast.makeText(getApplicationContext(),"Invalid Date Entered",Toast.LENGTH_LONG).show();
-                                    return ;
-                                }
-                                month = "11";
-                            }else if(month.equals("December")) {
-                                month = "12";
-                            }
-
-                            final String initial_date = date + month + user_signup_year.getSelectedItem().toString();
+                            String date = "";//user_signup_date.getSelectedItem().toString();
+                            date = date + formattedDate.charAt(8) + formattedDate.charAt(9);
 
 
-                            Calendar calendar = Calendar.getInstance();
+                            String month = "";
+                            month = month + formattedDate.charAt(5)+formattedDate.charAt(6);
 
-                            int thisYear = calendar.get(Calendar.YEAR);
-                            int thisMonth = calendar.get(Calendar.MONTH);
-                            int thisDate = calendar.get(Calendar.DAY_OF_MONTH);
+                            String initial_date = date + month +year;
 
-                            int given_date = user_signup_date.getSelectedItemPosition() + 1;
-                            int given_month = user_signup_month.getSelectedItemPosition();
-                            int given_year = user_signup_year.getSelectedItemPosition() + 2017;
 
-                            //Toast.makeText(getApplicationContext(),thisYear + " " + given_year,Toast.LENGTH_LONG).show();
-
-                            if(given_year == thisYear){
-                                if(given_month > thisMonth){
-                                    Toast.makeText(getApplicationContext(),"Invalid Date Entered",Toast.LENGTH_LONG).show();
-                                    return ;
-                                }else if(given_month == thisMonth){
-                                    if(given_date > thisDate){
-                                        Toast.makeText(getApplicationContext(),"Invalid Date Entered",Toast.LENGTH_LONG).show();
-                                        return ;
-                                    }
-                                }
-                            }
+//                            if(date.equals("1")){
+//                                date = "01";
+//                            }else if(date.equals("2")){
+//                                date = "02";
+//                            }else if(date.equals("3")){
+//                                date = "03";
+//                            }else if(date.equals("4")){
+//                                date = "04";
+//                            }else if(date.equals("5")){
+//                                date = "05";
+//                            }else if(date.equals("6")){
+//                                date = "06";
+//                            }else if(date.equals("7")){
+//                                date = "07";
+//                            }else if(date.equals("8")){
+//                                date = "08";
+//                            }else if(date.equals("9")){
+//                                date = "09";
+//                            }
+//
+//                            if(month.equals("January")){
+//                                month = "01";
+//                            }else if(month.equals("February")){
+//                                if(date.equals("29") || date.equals("30") || date.equals("31")){
+//                                    Toast.makeText(getApplicationContext(),"Invalid Date Entered",Toast.LENGTH_LONG).show();
+//                                    return ;
+//                                }
+//                                month = "02";
+//                            }else if(month.equals("March")){
+//                                month = "03";
+//                            }else if(month.equals("April")){
+//                                if(date.equals("31")){
+//                                    Toast.makeText(getApplicationContext(),"Invalid Date Entered",Toast.LENGTH_LONG).show();
+//                                    return ;
+//                                }
+//                                month = "04";
+//                            }else if(month.equals("May")){
+//                                month = "05";
+//                            }else if(month.equals("June")){
+//                                if(date.equals("31")){
+//                                    Toast.makeText(getApplicationContext(),"Invalid Date Entered",Toast.LENGTH_LONG).show();
+//                                    return ;
+//                                }
+//                                month = "06";
+//                            }else if(month.equals("July")){
+//                                month = "07";
+//                            }else if(month.equals("August")){
+//                                month = "08";
+//                            }else if(month.equals("September")){
+//                                if(date.equals("31")){
+//                                    Toast.makeText(getApplicationContext(),"Invalid Date Entered",Toast.LENGTH_LONG).show();
+//                                    return ;
+//                                }
+//                                month = "09";
+//                            }else if(month.equals("October")){
+//                                month = "10";
+//                            }else if(month.equals("November")){
+//                                if(date.equals("31")){
+//                                    Toast.makeText(getApplicationContext(),"Invalid Date Entered",Toast.LENGTH_LONG).show();
+//                                    return ;
+//                                }
+//                                month = "11";
+//                            }else if(month.equals("December")) {
+//                                month = "12";
+//                            }
+//
+//                            final String initial_date = date + month + user_signup_year.getSelectedItem().toString();
+//
+//
+//                            Calendar calendar = Calendar.getInstance();
+//
+//                            int thisYear = calendar.get(Calendar.YEAR);
+//                            int thisMonth = calendar.get(Calendar.MONTH);
+//                            int thisDate = calendar.get(Calendar.DAY_OF_MONTH);
+//
+//                            int given_date = user_signup_date.getSelectedItemPosition() + 1;
+//                            int given_month = user_signup_month.getSelectedItemPosition();
+//                            int given_year = user_signup_year.getSelectedItemPosition() + 2017;
+//
+//                            //Toast.makeText(getApplicationContext(),thisYear + " " + given_year,Toast.LENGTH_LONG).show();
+//
+//                            if(given_year == thisYear){
+//                                if(given_month > thisMonth){
+//                                    Toast.makeText(getApplicationContext(),"Invalid Date Entered",Toast.LENGTH_LONG).show();
+//                                    return ;
+//                                }else if(given_month == thisMonth){
+//                                    if(given_date > thisDate){
+//                                        Toast.makeText(getApplicationContext(),"Invalid Date Entered",Toast.LENGTH_LONG).show();
+//                                        return ;
+//                                    }
+//                                }
+//                            }
 
                             HashMap<String, String> userData = new HashMap<String, String>();
 
@@ -465,15 +488,17 @@ public class user_signup extends AppCompatActivity {
                             userData.put("Date12","0");
 
                             //Log.d("hello","how");
+                            Intent i = new Intent(getApplicationContext(), admin_logged_in.class);
+                            i.putExtra("username", username1);
+                            i.putExtra("password", password1);
+                            i.putExtra("society",society1);
 
                             userData.put("Society",society1);
                             userData.put("Cost",cost);
                             userData.put("Final Amount","0");
 
-                            Intent i = new Intent(getApplicationContext(), admin_logged_in.class);
-                            i.putExtra("username", username1);
-                            i.putExtra("password", password1);
-                            i.putExtra("society",society1);
+
+
 
                             mDatabase.child("Admin").child(username1.toString()).push().setValue(userData);
 

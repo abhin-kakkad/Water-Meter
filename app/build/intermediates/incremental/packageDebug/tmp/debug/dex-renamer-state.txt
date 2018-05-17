@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-#Mon May 14 14:39:54 IST 2018
-base.0=/Users/nish_1612/Documents/GitHub/Water-Meter/app/build/intermediates/transforms/dexMerger/debug/15
-=======
-#Mon May 14 19:06:49 IST 2018
-base.0=/Users/roshani/Documents/GitHub/Water-Meter/app/build/intermediates/transforms/dexMerger/debug/0
->>>>>>> master
+#Thu May 17 22:21:13 IST 2018
+base.0=A\:\\AKK\\Projects\\Water-Meter\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

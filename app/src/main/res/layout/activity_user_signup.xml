@@ -10,61 +10,125 @@
         android:id="@+id/user_flat"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
         android:background="@drawable/up"
-        android:ems="10"
         android:textColorHint="@android:color/white"
         android:padding="5dp"
-        android:hint="Enter House Number"
+        android:ems="10"
+        android:hint="Enter Flat number"
         android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/user_signup_mobile_number"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="150dp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
         android:background="#abcdef"
-        android:ems="10"
         android:textColorHint="@android:color/white"
         android:padding="5dp"
-        android:hint="Enter your mobile number"
+        android:ems="10"
+        android:hint="Enter User's Mobile number"
         android:inputType="textPassword" />
 
     <EditText
         android:id="@+id/user_initial_reading"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="200dp"
         android:layout_centerHorizontal="true"
         android:background="#abcdef"
-        android:ems="10"
+        android:layout_marginTop="250dp"
         android:textColorHint="@android:color/white"
         android:padding="5dp"
+        android:ems="10"
         android:hint="Enter initial reading"
         android:inputType="textPersonName" />
 
-    <EditText
-        android:id="@+id/user_date"
+    <TextView
+        android:id="@+id/date"
         android:layout_width="300dp"
         android:layout_height="50dp"
-        android:layout_marginTop="250dp"
-        android:layout_centerHorizontal="true"
         android:background="@drawable/down"
-        android:ems="10"
-        android:textColorHint="@android:color/white"
+        android:layout_marginTop="300dp"
         android:padding="5dp"
-        android:hint="System Date"
-        android:inputType="textPersonName" />
+        android:ems="10"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:id="@+id/user_signed_up"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="350dp"
         android:background="@drawable/button_round"
         android:textColor="@android:color/white"
         android:text="ADD user" />
+
+<!--
+    <EditText
+        android:id="@+id/user_cost"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_initial_reading"
+        android:layout_alignStart="@+id/user_initial_reading"
+        android:layout_below="@+id/user_initial_reading"
+        android:ems="10"
+        android:hint="Enter cost per unit"
+        android:inputType="textPersonName" />
+
+        <Spinner
+            android:id="@+id/user_signup_date"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/user_cost"
+            android:layout_alignRight="@+id/user_cost"
+            android:layout_below="@+id/user_cost"
+            android:layout_marginTop="20dp" />
+
+        <Spinner
+            android:id="@+id/user_signup_month"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_signup_date"
+            android:layout_alignLeft="@+id/user_signup_date"
+            android:layout_alignStart="@+id/user_signup_date" />
+
+        <Spinner
+            android:id="@+id/user_signup_year"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/user_signup_month"
+            android:layout_alignStart="@+id/user_signup_month"
+            android:layout_below="@+id/user_signup_month" /> -
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/user_signup_month"
+        android:layout_alignLeft="@+id/user_cost"
+        android:layout_alignStart="@+id/user_cost"
+        android:text="Select date" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/user_signup_month"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:text="Select month" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/user_signup_year"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:text="Select year" />-->
+
+
+
 </RelativeLayout>
