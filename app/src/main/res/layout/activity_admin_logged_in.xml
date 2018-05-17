@@ -27,6 +27,7 @@
         android:layout_marginTop="200dp"
         android:layout_centerHorizontal="true"
         android:onClick="choosen_add_user_data"
+<<<<<<< HEAD
         android:padding="5dp"
         android:text="Add user data" />
 
@@ -51,4 +52,19 @@
         android:layout_centerHorizontal="true"
         android:padding="5dp"
         android:text="Change Password" />
+=======
+        android:text="add user data" />
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/add_user_data"
+        android:layout_alignLeft="@+id/add_user_data"
+        android:layout_alignRight="@+id/add_user_data"
+        android:layout_alignStart="@+id/add_user_data"
+        android:layout_below="@+id/add_user_data"
+        android:layout_marginTop="39dp"
+        android:text="Change admin details" />
+>>>>>>> master
 </RelativeLayout>

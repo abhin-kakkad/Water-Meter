@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Water Meter</string>
+    <string-array name="Methods">
+        <item>Method 1</item>
+        <item>Method 2</item>
+    </string-array>
     <string-array name="Dates">
         <item>1</item>
         <item>2</item>

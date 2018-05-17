@@ -7,8 +7,10 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -35,6 +37,10 @@ public class admin_signup extends AppCompatActivity {
     private EditText admin_signup_password;
     private EditText admin_signup_society;
     private EditText admin_signup_password_2;
+    private ArrayAdapter<CharSequence> methods;
+//    private EditText cost;
+//    private EditText discount;
+    private Spinner method;
 
     private TextView usernames;
 
@@ -51,8 +57,15 @@ public class admin_signup extends AppCompatActivity {
         admin_signup_password  = (EditText) findViewById(R.id.admin_signup_password);
         admin_signup_society = (EditText)findViewById(R.id.admin_signup_society);
         admin_signup_password_2 = (EditText)findViewById(R.id.admin_signup_password_2);
+//        cost = (EditText)findViewById(R.id.cost);
+//        discount = (EditText)findViewById(R.id.discount);
 
         usernames = (TextView)findViewById(R.id.username);
+
+        method = (Spinner)findViewById(R.id.method);
+        methods = ArrayAdapter.createFromResource(this,R.array.Methods,android.R.layout.simple_spinner_item);
+        methods.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        method.setAdapter(methods);
 
         mDatabase = FirebaseDatabase.getInstance().getReference();
         myDatabase = FirebaseDatabase.getInstance().getReference();
@@ -62,18 +75,20 @@ public class admin_signup extends AppCompatActivity {
                 .orderByChild("username");
 
         final String[] username = new String[1];
+        final long[] size = new long[1];
 
         q.addListenerForSingleValueEvent(new ValueEventListener(){
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
-                long size = dataSnapshot.getChildrenCount();
+                size[0] = dataSnapshot.getChildrenCount();
+                size[0]++;
                 String t = "";
-                t = t + String.valueOf(size);
+                t = "Your Username : " + t + String.valueOf(size[0]);
                 usernames.setText(t);
                 //Toast.makeText(getApplicationContext(), t, Toast.LENGTH_LONG).show();
-                username[0] = t;
-                usernames.setText(username[0]);
+                username[0] = String.valueOf(size[0]);
+                //usernames.setText(username[0]);
 
 
 
@@ -94,6 +109,8 @@ public class admin_signup extends AppCompatActivity {
 
                 final String password = admin_signup_password.getText().toString().trim();
                 final String society = admin_signup_society.getText().toString().trim();
+//                final String costs = cost.getText().toString().trim();
+//                final String discounts = discount.getText().toString().trim();
 
                 String password_2 = admin_signup_password_2.getText().toString().trim();
 
@@ -122,6 +139,19 @@ public class admin_signup extends AppCompatActivity {
                     return;
                 }
 
+//                if(TextUtils.isEmpty(costs)){
+//                    Toast.makeText(admin_signup.this,"Please enter the cost price",Toast.LENGTH_SHORT).show();
+//                    return;
+//                }
+
+                final String method1 = method.getSelectedItem().toString();
+
+//                if(method1.equals("Method 2")){
+//                    if(TextUtils.isEmpty(discounts)){
+//                        Toast.makeText(admin_signup.this,"Please enter the units till which service is free",Toast.LENGTH_SHORT).show();
+//                        return;
+//                    }
+//                }
 
                 Query query = mDatabase
                         .child("Admin")
@@ -137,10 +167,10 @@ public class admin_signup extends AppCompatActivity {
                             return;
                         } else {
 
-                            long size = dataSnapshot.getChildrenCount();
-                            String t = "";
-                            t = t + String.valueOf(size);
-                            Toast.makeText(getApplicationContext(), t, Toast.LENGTH_LONG).show();
+//                            long size = dataSnapshot.getChildrenCount();
+//                            String t = "";
+//                            t = t + String.valueOf(size);
+//                            Toast.makeText(getApplicationContext(), t, Toast.LENGTH_LONG).show();
 
                             HashMap<String, String> userData = new HashMap<String, String>();
 
@@ -150,20 +180,38 @@ public class admin_signup extends AppCompatActivity {
                             userData.put("Password", password);
                             userData.put("Society", society);
                             userData.put("username_password", y);
-                            userData.put("cost", String.valueOf(0));
-
+                            if(method1.equals("Method 1")){
+                                userData.put("Method",String.valueOf(1));
+                                userData.put("Cost","0");
+                                userData.put("Discount","0");
+                            }else {
+                                userData.put("Method", String.valueOf(2));
+                                userData.put("Cost","0");
+                                userData.put("Discount","0");
+                            }
 
                             Log.d("hello", "how");
 
-                            mDatabase.child("Admin").push().setValue(userData);
+                            mDatabase.child("Admin").child(username[0]).push().setValue(userData);
 
                             //              mDatabase.child("Hello").setValue(userData);
 
-
-                            startActivity(new Intent(getApplicationContext(), admin_login.class));
+                            Intent i = new Intent(getApplicationContext(), EnterSocietyDetails.class);
+                            i.putExtra("username", username[0]);
+                            i.putExtra("password", password);
+                            i.putExtra("society",society);
+                            i.putExtra("username_password",y);
+                            i.putExtra("cost","0");
+                            i.putExtra("discount","0");
+                            i.putExtra("method",method1);
+                            startActivity(i);
                             finish();
 
-                            Log.d("hello1", "how1");
+
+//                            startActivity(new Intent(getApplicationContext(), admin_login.class));
+//                            finish();
+//
+//                            Log.d("hello1", "how1");
 
 
                         }

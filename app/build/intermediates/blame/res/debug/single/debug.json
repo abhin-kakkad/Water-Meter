@@ -12,8 +12,17 @@
         "source": "C:\\Users\\Abhin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\08cf6c916a11fa98f4e310f941c7d50b\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
+<<<<<<< HEAD
         "merged": "A:\\AKK\\Projects\\Water-Meter\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_tint_edittext.xml.flat",
         "source": "C:\\Users\\Abhin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-26.1.0.aar\\08cf6c916a11fa98f4e310f941c7d50b\\res\\color\\abc_tint_edittext.xml"
+=======
+        "merged": "/Users/nish_1612/Documents/GitHub/Water-Meter/app/build/intermediates/res/merged/debug/layout_activity_enter_society_details.xml.flat",
+        "source": "/Users/nish_1612/Documents/GitHub/Water-Meter/app/src/main/res/layout/activity_enter_society_details.xml"
+    },
+    {
+        "merged": "/Users/nish_1612/Documents/GitHub/Water-Meter/app/build/intermediates/res/merged/debug/anim_abc_slide_out_bottom.xml.flat",
+        "source": "/Users/nish_1612/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/8b056b6ef62e41f514141b8568411799/res/anim/abc_slide_out_bottom.xml"
+>>>>>>> master
     },
     {
         "merged": "A:\\AKK\\Projects\\Water-Meter\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
