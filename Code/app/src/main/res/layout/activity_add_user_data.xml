@@ -15,7 +15,7 @@
         android:layout_alignStart="@+id/add_user_data_reading"
         android:layout_marginTop="84dp"
         android:ems="10"
-        android:hint="Enter username"
+        android:hint="Enter Flat Number"
         android:inputType="textPersonName" />
 
     <EditText
